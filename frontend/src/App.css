@@ -1,0 +1,266 @@
+body{
+  margin:0px;
+  padding:0px;
+}
+
+
+.nav-ul li{
+  display:inline-block;
+  flex-direction: row;
+  padding-top:6px;
+  padding-bottom:6px;
+  padding-right:10px;
+
+}
+
+.nav-ul{
+  padding: 5px;
+  margin: 0px;
+  background-color: rgb(97, 97, 109);
+  width: 100%;
+  
+}
+
+.each-route-top-heading{
+  color:black;
+  font-size:30px;
+  font-weight:700;
+}
+
+.icon-size{
+  width: 100px;
+  height: 45px;
+  float: left;
+  padding-top: 4px;
+  padding-right:5px;
+  padding-left: 10px;
+}
+
+.towards-right{
+ text-align: right;
+}
+
+
+.footer-div{
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  text-align: center;
+  font-size:15px;
+  font-weight:400;
+  width: 100%;
+  background-color: rgb(96, 187, 223);
+}
+
+.search-input{
+  padding-left: 15px;
+    border-radius: 5px;
+    width: 400px;
+    margin: 20px;
+    height: 40px;
+    border: 2px solid skyblue;
+}
+
+.nav-ul li a{
+  padding: 5px;
+
+  color:white;
+  margin: 0px;
+  text-decoration: none;
+}
+
+.inputBox{
+    display: block;
+    margin: 25px;
+    padding: 7px;
+    width: 300px;
+    border: 1px solid skyblue
+}
+
+.register,.entry{
+  margin-left:30%;
+  padding-top:70px;
+}
+
+.entries-list{
+  text-align: center;
+  padding-top:70px;
+
+}
+
+.entries-list ul li{
+  display: inline-block;
+  border: 1px solid skyblue;
+  padding:5px;
+  width:150px;
+}
+
+.entries-list ul{
+  margin: 0px;;
+}
+
+.login{
+  margin-left:30%;
+  padding-top:70px;
+}
+
+.scroll-list{
+  max-height: 100%; 
+  overflow-y: auto;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.unordered-list{
+  list-style-type:disc;
+  
+  height:100%;
+}
+
+.span-element-style{
+  color:rgb(15, 15, 210);
+  font-size:20px;
+}
+
+
+#each-card-item{
+  width:330px;
+  border-radius:5px;
+  padding:3px;
+  margin:20px;
+  background-color: rgb(227, 230, 233);
+}
+
+#each-card-item img{
+  height:200px;
+  width:100%;
+}
+
+#update-button{
+  background-color: rgb(71, 220, 71);
+  margin-left:20px;
+  text-decoration:none !important;
+}
+
+#content-container{
+  text-align: left;
+  padding:5px;
+  min-height:650px;
+  margin-bottom:20px;
+}
+
+#content-container p{
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+
+.buttons-container{
+  margin-bottom:20px;
+}
+
+.loader-container{
+  padding-top:150px;
+  
+}
+
+.invalid-text {
+  COLOR: red;
+  MARGIN-LEFT: 25px;
+  margin-top: -22px;
+  display: block;
+}
+
+.home-image {
+  width: 740px;
+  height: 500px;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+.top-section-heading-container {
+  padding-top: 120px;
+  padding-left: 50px;
+  padding-right: 0px;
+}
+
+.image-container{
+  margin-top:70px;
+}
+
+.top-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 45px;
+  font-weight: 700;
+
+}
+
+.smily-image{
+  height:60px;
+  width:60px;
+}
+
+
+#custom-button {
+  margin-top:50px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-family: "Sans Serif";
+  padding: 15px;
+  padding-left: 45px;
+  padding-right: 45px;
+  font-size: 25px;
+}
+
+.navbar-container{
+  position: fixed;
+  z-index: 1000;
+  width:100%;
+  margin-top:0px;
+
+}
+
+.bg-container{
+  padding:0px;
+  margin:0px;
+  border:1px solid green;
+  background-color: rgb(210, 185, 189);
+  min-height:100vh;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
