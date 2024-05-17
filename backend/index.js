@@ -16,17 +16,17 @@ app.use(cors());
 app.post("/register", async (req, resp) => {
   try {
     let newuser = new User(req.body);
-    let result = await newuser.save();
+    let user = await newuser.save();
 
-    result = result.toObject();
-    delete result.password;
-    Jwt.sign({ result }, jwtKey, { expiresIn: "2h" }, (err, token) => {
+    user = user.toObject();
+    delete user.password;
+    Jwt.sign({ user }, jwtKey, { expiresIn: "2h" }, (err, token) => {
       if (err) {
         resp.status(500).send({
           result: "Something went wrong, Please try after sometime",
         });
       }
-      resp.send({ result, auth: token });
+      resp.send({ user, auth: token });
     });
   } catch (error) {
     resp.status(500).send({ result: "Error registering user" });
@@ -117,8 +117,6 @@ app.get("/search/:key",verifyToken, async (req, resp) => {
   });
   resp.send(result);
 });
-
-//title, description, date, location, and optional photos
 
 
 function verifyToken(req, resp, next) {

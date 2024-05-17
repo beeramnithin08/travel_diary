@@ -36,8 +36,10 @@ const SignupForm = () => {
       });
       console.log(result);
       result = await result.json();
+      console.log("result is");
       console.log(result);
-      localStorage.setItem("user", JSON.stringify(result));
+      localStorage.setItem("user", JSON.stringify(result.user));
+      localStorage.setItem("token", JSON.stringify(result.auth));
       navigate("/");
     }
   };
