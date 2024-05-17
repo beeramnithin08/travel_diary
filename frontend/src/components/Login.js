@@ -64,15 +64,15 @@ const Login = () => {
         value={email}
         onChange={onChangingEmail}
         placeholder="Enter Email"
-        required // Added required attribute
+        required 
       />
       <input
         className="inputBox"
-        type="password" // Changed input type to password for better security
+        type="password" 
         value={password}
         onChange={onChangingPassword}
         placeholder="Enter password"
-        required // Added required attribute
+        required
       />
       <button className="btn btn-primary" onClick={onLogin} type="button">
         Login

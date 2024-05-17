@@ -33,7 +33,6 @@ const UpdateEntry = () => {
   }, [params.id]);
 
   const onUpdatingEntry = async () => {
-    // Your update entry logic here
     console.log(title, description, date, location, imageUrl);
     try {
       let result = await fetch(`http://localhost:4000/entry/${params.id}`, {
