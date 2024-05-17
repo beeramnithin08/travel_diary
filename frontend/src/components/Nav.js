@@ -38,10 +38,10 @@ const Nav = () => {
           className={`collapse navbar-collapse ${isCollapsed ? "" : "show"}`}
           id="navbarNavAltMarkup"
         >
-          <div className="navbar-nav ml-auto">
-            <ul className="nav-ul">
+          <div className="navbar-nav" style={{width:"100%"}}>
+            
               {auth ? (
-                <>
+                <ul className="nav-ul">
                   <li>
                     <Link to="/" className="nav-link">
                       Profile
@@ -66,9 +66,9 @@ const Nav = () => {
                       Logout ({JSON.parse(auth).name})
                     </Link>
                   </li>
-                </>
+                </ul>
               ) : (
-                <>
+                <ul className="nav-ul towards-right">
                   <li>
                     <Link to="/login" className="nav-link">
                       Login
@@ -79,9 +79,9 @@ const Nav = () => {
                       Signup
                     </Link>
                   </li>
-                </>
+                </ul>
               )}
-            </ul>
+           
           </div>
         </div>
       </nav>
